@@ -45,11 +45,12 @@ Parte (b)
 > suma_as_foldN :: Nat -> Nat -> Nat
 > suma_as_foldN n m  = foldN (\e -> Succ e) n m
 
-> preceder_uno (Succ Zero) = Zero
-> preceder_uno (Succ n)    = Succ n
+> preceder_uno :: Nat -> Nat
+> preceder_uno Zero     = Zero
+> preceder_uno (Succ n) = Succ n
 
 > predecesor_as_foldN :: Nat -> Nat
-> predecesor_as_foldN n = foldN preceder_uno n Zero
+> predecesor_as_foldN  = foldN preceder_uno Zero n
 
 Datos de prueba
 
