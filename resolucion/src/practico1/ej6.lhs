@@ -32,7 +32,7 @@ Parte (d)
 Parte (e)
 
 > estudiantes_en_un_año :: [Estudiante] -> Integer -> [(String,Integer)]
-> estudiantes_en_un_año estudiantes año =  [ identificar_estudiante estudiante | estudiante <- estudiantes, año_ingreso_estudiante estudiante == año ]
+> estudiantes_en_un_año estudiantes año = [ (nombre,ci) | (nombre,ci,año_e,_) <- estudiantes, año_e == año ]
 
 Datos de prueba
  
