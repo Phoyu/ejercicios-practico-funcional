@@ -9,7 +9,7 @@ Por definicion de twice se tiene que:
 
 siendo tail.tail :: [a] -> [a]. Por lo que 
 
-  twice tail [1,2,3,4] == tail.tail [1,2,3,4] == tail (tail [1,2,3,4) == tail [2,3,4] == [3,4]
+  twice tail [1,2,3,4] == tail.tail [1,2,3,4] == tail (tail [1,2,3,4]) == tail [2,3,4] == [3,4]
 
 
 Por otro lado tenemos que:
